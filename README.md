@@ -6,4 +6,4 @@ The Analytical Questions test contains 3 levels, namely Easy, Medium, and Hard.
 
 | Title | Level | Solution |
 |:-----:|:----------:|:--------:|
-|[Calculate Average Score](https://platform.stratascratch.com/coding/10540-calculate-average-score?code_type=2)|Easy|[Link](https://github.com/Muhammad-Darwin-Yunus/Pandas-Python-StrataScratch/blob/main/Code%20Pandas/CalculateAverageScore)
+|[Calculate Average Score](https://platform.stratascratch.com/coding/10540-calculate-average-score?code_type=2)|Easy|[Link](https://github.com/Muhammad-Darwin-Yunus/Pandas-Python-StrataScratch/blob/main/Code%20Pandas/CalculateAverageScore.py)
