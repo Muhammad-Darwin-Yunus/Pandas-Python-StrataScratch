@@ -34,7 +34,7 @@ housing_units = housing_units[['total_housings']].reset_index()
 
 Output:
 
-year | total_house
+year | total_housings
 2006	1979.5
 2007	1503
 2008	1119.5
