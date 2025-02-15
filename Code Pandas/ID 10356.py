@@ -37,14 +37,14 @@ gabung_baris
 
 Output:
 
-first_name | last_name | fullname     | profession
-Sarah        Johnson    Sarah Johnson    Doctor
-Emma          Johnson    Emma Johnson    Doctor
-Nancy        Johnson    Nancy Johnson    Doctor
-Jack          Johnson    Jack Johnson    Doctor
-Hannah        Johnson    Hannah Johnson  Doctor
-Elizabeth    Johnson    Elizabeth Johnson  Doctor
-Emma          Johnson    Emma Johnson      Doctor
-Emily        Johnson    Emily Johnson      Doctor
-Isabella      Johnson    Isabella Johnson  Doctor
-Madison      Johnson    Madison Johnson    Doctor
+fullname
+Sarah Johnson
+Emma Johnson
+Nancy Johnson
+Jack Johnson
+Hannah Johnson
+Elizabeth Johnson
+Emma Johnson
+Emily Johnson
+Isabella Johnson
+Madison Johnson
