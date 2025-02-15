@@ -32,7 +32,7 @@ number_variety = number_variety.rename(columns={'sepal_length':'total_variety'})
 
 Output:
 
-variety | records
+variety | total_variety
 Setosa      50
 Versicolor  50
 Virginica    50
