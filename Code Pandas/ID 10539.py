@@ -37,7 +37,7 @@ activity_users
 
 Output:
 
-user_id  |  total_activity
+user_id  |  activity_type
   1            2
   2            3
   3            3
