@@ -30,7 +30,7 @@ update_salaries
 
 Output:
 
-id | first_name | last_name | department_id | current_salary
+id | first_name | last_name | department_id | salary
 1    Todd          Wilson        1006            110000
 2    Justin        Simon          1005          130000
 3    Kelly        Rosario        1002            42689
