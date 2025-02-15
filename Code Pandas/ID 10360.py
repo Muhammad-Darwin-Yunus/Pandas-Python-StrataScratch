@@ -37,7 +37,7 @@ filter_movies[['flight_id','movie_id','duration']]
 
 Output:
 
-flight_id | movie_id | movie_duration
+flight_id | movie_id | duration
 101            1            120
 101            2            90
 101            3            60
