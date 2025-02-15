@@ -44,7 +44,7 @@ olympics_athletes_events_sort
 
 Output:
 
-noc | firstparticipated
+noc | first_participated
 ARG	1924
 AUS	1924
 AUT	1904
