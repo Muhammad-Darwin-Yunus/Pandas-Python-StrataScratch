@@ -42,7 +42,7 @@ result = hotel_name.groupby(['hotel_name','reviewer_score']).size().reset_index(
 
 Output:
 
-hotel_name   | reviewer_score | count(*)
+hotel_name   | reviewer_score | count
 Hotel Arena          7.5          2
 Hotel Arena          9.6          2
 Hotel Arena          4.6          1
