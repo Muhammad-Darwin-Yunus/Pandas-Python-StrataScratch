@@ -37,11 +37,11 @@ import pandas as pd
 
 # Start writing code
 
-los_angeles_restaurant_health_inspections = pd.DataFrame(los_angeles_restaurant_health_inspections)
+inactive_program = pd.DataFrame(los_angeles_restaurant_health_inspections)
 
-los_angeles_restaurant_health_inspections = los_angeles_restaurant_health_inspections[los_angeles_restaurant_health_inspections['program_status']=='INACTIVE']
+inactive_program_inspection = inactive_program[inactive_program['program_status']=='INACTIVE']
 
-los_angeles_restaurant_health_inspections[['program_name','program_status']]
+inactive_program_inspection[['program_name','program_status']]
 
 Output:
 
