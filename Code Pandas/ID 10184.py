@@ -34,13 +34,13 @@ import pandas as pd
 
 # Start writing code
 
-olympics_athletes_events = pd.DataFrame(olympics_athletes_events)
+first_participated = pd.DataFrame(olympics_athletes_events)
 
-olympics_athletes_events = olympics_athletes_events.groupby('noc').agg(first_participated=('year','min')).reset_index()
+first_participated_olympic = first_participated.groupby('noc').agg(first_participated=('year','min')).reset_index()
 
-olympics_athletes_events_sort = olympics_athletes_events.sort_values(by='noc',ascending=True)
+first_participated_olympic_sort = first_participated_olympic.sort_values(by='noc',ascending=True)
 
-olympics_athletes_events_sort
+first_participated_olympic_sort
 
 Output:
 
