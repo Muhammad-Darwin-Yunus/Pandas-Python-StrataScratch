@@ -22,7 +22,9 @@ import pandas as pd
 
 # Start writing code
 
-group_data = project_data.groupby('project_id').agg(team_count=('team_member_id','nunique'),average_score=('score','mean'))
+average_score = pd.DataFrame(project_data)
+
+group_data = average_score.groupby('project_id').agg(team_count=('team_member_id','nunique'),average_score=('score','mean'))
 
 filter_data = group_data[group_data['team_count']>1]
 filter_data = filter_data.reset_index()
