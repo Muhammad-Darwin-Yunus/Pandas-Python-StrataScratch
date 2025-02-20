@@ -25,11 +25,11 @@ import pandas as pd
 
 hired_february = pd.DataFrame(worker)
 
-hired_february = hired_february[(hired_february['joining_date'].dt.month == 2) & (hired_february['worker_id']% 2 != 0)]
+hired_february_hired = hired_february[(hired_february['joining_date'].dt.month == 2) & (hired_february['worker_id']% 2 != 0)]
 
-hired_february['fullname'] = hired_february['first_name'] + ' ' + hired_february['last_name']
+hired_february_hired['fullname'] = hired_february_hired['first_name'] + ' ' + hired_february_hired['last_name']
 
-hired_february['fullname']
+hired_february_hired['fullname']
 
 Output:
 
