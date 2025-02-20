@@ -25,9 +25,11 @@ import pandas as pd
 
 abigail_breslin = pd.DataFrame(oscar_nominees)
 
-abigail_breslin = abigail_breslin[abigail_breslin['nominee']=='Abigail Breslin']
+abigail_breslin_nomi = abigail_breslin[abigail_breslin['nominee']=='Abigail Breslin']
 
-abigail_breslin_nominee = abigail_breslin.groupby('nominee').agg(nominated_oscar=('nominee','count')).reset_index()
+abigail_breslin_nominee = abigail_breslin_nomi.groupby('nominee').agg(nominated_oscar=('nominee','count')).reset_index()
+
+abigail_breslin_nominee
 
 abigail_breslin_nominee
 
