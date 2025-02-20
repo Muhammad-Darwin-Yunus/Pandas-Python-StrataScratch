@@ -31,8 +31,6 @@ abigail_breslin_nominee = abigail_breslin_nomi.groupby('nominee').agg(nominated_
 
 abigail_breslin_nominee
 
-abigail_breslin_nominee
-
 Output:
 
 nominee          |  nominated_oscar
