@@ -34,9 +34,9 @@ import pandas as pd
 
 gender_doctor = pd.DataFrame(medical_appointments)
 
-gender_doctor = gender_doctor.groupby('gender')['appointmentid'].count().reset_index()
+gender_docto_appointments = gender_doctor.groupby('gender')['appointmentid'].count().reset_index()
 
-gender_doctor = gender_doctor.rename(columns={'appointmentid':'total_appointments'})
+gender_doctor_rename = gender_docto_appointments.rename(columns={'appointmentid':'total_appointments'})
 
 Output:
 
