@@ -31,9 +31,9 @@ import pandas as pd
 
 post_heart = pd.merge(facebook_reactions,facebook_posts,how='inner',on='post_id')
 
-post_heart = post_heart[post_heart['reaction']=='heart']
+post_heart_react = post_heart[post_heart['reaction']=='heart']
 
-post_heart.distinct = post_heart[['post_id','poster_y','post_text','post_keywords','post_date']].drop_duplicates()
+post_heart.distinct = post_heart_react[['post_id','poster_y','post_text','post_keywords','post_date']].drop_duplicates()
 
 Output:
 
