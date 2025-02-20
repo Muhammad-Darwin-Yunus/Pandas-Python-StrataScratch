@@ -32,9 +32,9 @@ import pandas as pd
 
 sell_pizza = pd.DataFrame(yelp_business)
 
-sell_pizza = sell_pizza[sell_pizza['categories'].str.contains('pizza',case=False,na=False)]
+sell_pizza_yelp = sell_pizza[sell_pizza['categories'].str.contains('pizza',case=False,na=False)]
 
-sell_pizza[['business_id','name','categories']]
+sell_pizza_yelp[['business_id','name','categories']]
 
 Output:
 
