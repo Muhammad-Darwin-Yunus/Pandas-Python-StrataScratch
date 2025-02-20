@@ -36,9 +36,9 @@ import pandas as pd
 
 hotel_arena = pd.DataFrame(hotel_reviews)
 
-hotel_name = hotel_arena[hotel_arena['hotel_name']=='Hotel Arena']
+hotel_name_review = hotel_arena[hotel_arena['hotel_name']=='Hotel Arena']
 
-result = hotel_name.groupby(['hotel_name','reviewer_score']).size().reset_index(name='count')
+result = hotel_name_review.groupby(['hotel_name','reviewer_score']).size().reset_index(name='count')
 
 Output:
 
