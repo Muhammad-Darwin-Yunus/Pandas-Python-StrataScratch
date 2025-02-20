@@ -24,9 +24,11 @@ import pandas as pd
 
 # Start writing code
 
-user_activity['time_period'] = user_activity['start_timestamp'].astype(str) + ' to ' + user_activity['end_timestamp'].astype(str)
+peak_online = pd.DataFrame(user_activity)
 
-active_user = user_activity.groupby(['device_type','time_period'],as_index=False).agg({
+peak_online['time_period'] = peak_online['start_timestamp'].astype(str) + ' to ' + peak_online['end_timestamp'].astype(str)
+
+active_user = peak_online.groupby(['device_type','time_period'],as_index=False).agg({
     'user_count':'sum'
 })
 
