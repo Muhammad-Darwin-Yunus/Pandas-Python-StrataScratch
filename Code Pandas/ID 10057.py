@@ -28,9 +28,9 @@ import pandas as pd
 
 lolo_five_Star = pd.DataFrame(yelp_reviews)
 
-lolo_five_Star = lolo_five_Star[lolo_five_Star['business_name']=="Lo-Lo's Chicken & Waffles"]
+lolo_five_Star_total = lolo_five_Star[lolo_five_Star['business_name']=="Lo-Lo's Chicken & Waffles"]
 
-lolo_five_Star = lolo_five_Star.groupby('business_name').agg(stars=('stars','first'),total_reviews=('stars','count'))
+lolo_five_Star_fix = lolo_five_Star_total.groupby('business_name').agg(stars=('stars','first'),total_reviews=('stars','count'))
 
 Output:
 
