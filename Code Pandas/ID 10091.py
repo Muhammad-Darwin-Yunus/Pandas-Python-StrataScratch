@@ -21,7 +21,7 @@ import pandas as pd
 
 user_exile = pd.DataFrame(facebook_friends)
 
-user_exile = user_exile[(user_exile['user1']!=1) & (user_exile['user2']!=1)]
+user_exile_part = user_exile[(user_exile['user1']!=1) & (user_exile['user2']!=1)]
 
 Output:
 
