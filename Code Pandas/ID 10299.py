@@ -24,7 +24,9 @@ import pandas as pd
 
 # Start writing code
 
-update_salaries = ms_employee_salary.groupby('id').agg(first_name=('first_name','first'),last_name=('last_name','first'),department_id=('department_id','first'),salary=('salary','max')).reset_index()
+finding_update = pd.DataFrame(ms_employee_salary)
+
+update_salaries = finding_update.groupby('id').agg(first_name=('first_name','first'),last_name=('last_name','first'),department_id=('department_id','first'),salary=('salary','max')).reset_index()
 
 update_salaries
 
