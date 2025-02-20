@@ -36,16 +36,16 @@ import pandas as pd
 
 team_more_one = pd.DataFrame(olympics_athletes_events)
 
-team_more_one = team_more_one.fillna(' ')
+team_more_one_olympic = team_more_one.fillna(' ')
 
-one_team = team_more_one.groupby('name').agg(
+one_team = team_more_one_olympic.groupby('name').agg(
     teams=('team', lambda x: ','.join(sorted(x))),
     games=('games', lambda x: ','.join(sorted(x))),
     sport=('sport', lambda x: ','.join(sorted(x))),
     medal=('medal', lambda x: ','.join(sorted(x))),
 ).reset_index()
 
-one_team = one_team[one_team['teams'].str.split(',').apply(len)>1]
+one_team_len = one_team[one_team['teams'].str.split(',').apply(len)>1]
 
 Output:
 
