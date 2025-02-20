@@ -39,9 +39,9 @@ import pandas as pd
 
 westlake_neighborhood = pd.DataFrame(airbnb_search_details)
 
-westlake_neighborhood = westlake_neighborhood[(westlake_neighborhood['property_type']=='House') & (westlake_neighborhood['neighbourhood']=='Westlake') & (westlake_neighborhood['amenities'].str.contains('tv',case=False))]
+westlake_neighborhood_tv = westlake_neighborhood[(westlake_neighborhood['property_type']=='House') & (westlake_neighborhood['neighbourhood']=='Westlake') & (westlake_neighborhood['amenities'].str.contains('tv',case=False))]
 
-westlake_neighborhood_count = westlake_neighborhood.shape[0]
+westlake_neighborhood_count = westlake_neighborhood_tv.shape[0]
 
 westlake_neighborhood_new = pd.DataFrame({
     'total_number_of_searches_for_houses': [westlake_neighborhood_count]
