@@ -30,18 +30,13 @@ import pandas as pd
 
 # Start writing code
 
-# Import your libraries
-import pandas as pd
-
-# Start writing code
-
 gender_reviews = pd.merge(airbnb_reviews,airbnb_guests,left_on='from_user',right_on='guest_id',how='left')
 
-gender_reviews = gender_reviews[gender_reviews['to_type']=='guest']
+gender_reviews_type = gender_reviews[gender_reviews['to_type']=='guest']
 
-gender_reviews = gender_reviews.groupby('gender')['from_user'].mean().reset_index()
+gender_reviews_user = gender_reviews_type.groupby('gender')['from_user'].mean().reset_index()
 
-gender_reviews_fix = pd.DataFrame({'gender':gender_reviews['gender'],'average_review_score':gender_reviews['from_user']})
+gender_reviews_fix = pd.DataFrame({'gender':gender_reviews_user['gender'],'average_review_score':gender_reviews_user['from_user']})
     
 Output:
 
