@@ -22,7 +22,9 @@ import pandas as pd
 
 # Start writing code
 
-orders_data = orders_analysis.groupby(['stage_of_order','week']).agg(quantity = ('quantity','sum')).reset_index()
+weekly_orders_report = pd.DataFrame(orders_analysis)
+
+orders_data = weekly_orders_report.groupby(['stage_of_order','week']).agg(quantity = ('quantity','sum')).reset_index()
 
 orders_filter = orders_data[(orders_data['stage_of_order'] == 'ordered') & (orders_data['week'] >= '2023-01-01') & (orders_data['week'] <= '2023-03-31')]
 
