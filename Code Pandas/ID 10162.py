@@ -41,11 +41,11 @@ import pandas as pd
 
 number_acquisitions = pd.DataFrame(crunchbase_acquisitions)
 
-number_acquisitions = number_acquisitions.groupby('acquired_quarter')['id'].count().reset_index()
+number_acquisitions_number = number_acquisitions.groupby('acquired_quarter')['id'].count().reset_index()
 
-number_acquisitions = number_acquisitions.rename(columns={'id':'number_acquisitions'})
+number_acquisitions_rename = number_acquisitions_number.rename(columns={'id':'number_acquisitions'})
 
-number_acquisitions_sort = number_acquisitions.sort_values(by='number_acquisitions',ascending=False)
+number_acquisitions_sort = number_acquisitions_rename.sort_values(by='number_acquisitions',ascending=False)
 
 number_acquisitions_sort
 
