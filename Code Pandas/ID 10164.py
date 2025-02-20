@@ -24,7 +24,7 @@ import pandas as pd
 
 adwords_earning = pd.DataFrame(google_adwords_earnings)
 
-adwords_earning = adwords_earning.groupby('business_type')['adwords_earnings'].sum().reset_index()
+adwords_earning_total = adwords_earning.groupby('business_type')['adwords_earnings'].sum().reset_index()
 
 Output:
 
