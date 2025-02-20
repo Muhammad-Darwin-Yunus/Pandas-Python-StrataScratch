@@ -32,9 +32,9 @@ import pandas as pd
 
 bikes_used = pd.DataFrame(dc_bikeshare_q1_2012)
 
-bikes_used = bikes_used.groupby('bike_number')['end_time'].first().reset_index()
+bikes_used_last = bikes_used.groupby('bike_number')['end_time'].first().reset_index()
 
-start_bike_sort = bikes_used.sort_values(by='end_time',ascending=False)
+start_bike_sort = bikes_used_last.sort_values(by='end_time',ascending=False)
 
 start_bike_sort
 
