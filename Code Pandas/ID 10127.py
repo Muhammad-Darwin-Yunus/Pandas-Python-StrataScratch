@@ -21,18 +21,9 @@ import pandas as pd
 
 # Start writing code
 
-sales_revenue = pd. DataFrame(sales_performance)
+sales_revenue = pd.DataFrame(sales_performance)
 
-sales_performance = sales_performance[sales_performance['salesperson'].isin(['Samantha','Lisa'])]
-
-# Import your libraries
-import pandas as pd
-
-# Start writing code
-
-sales_revenue = pd. DataFrame(sales_performance)
-
-sales_performance = sales_performance[sales_performance['salesperson'].isin(['Samantha','Lisa'])]
+sales_performance = sales_revenue[sales_revenue['salesperson'].isin(['Samantha','Lisa'])]
 
 sales_performance = sales_performance.groupby('salesperson')['sales_revenue'].sum().reset_index()
 
