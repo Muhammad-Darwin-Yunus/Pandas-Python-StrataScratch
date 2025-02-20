@@ -33,9 +33,9 @@ import pandas as pd
 
 highest_crime = pd.DataFrame(sf_crime_incidents_2014_01)
 
-highest_crime = highest_crime.groupby('day_of_week')['date'].count().reset_index()
+highest_crime_rate = highest_crime.groupby('day_of_week')['date'].count().reset_index()
 
-highest_crime = pd.DataFrame({'day_of_week':highest_crime['day_of_week'],'total_crime':highest_crime['date']})
+highest_crime_rate = pd.DataFrame({'day_of_week':highest_crime_rate['day_of_week'],'total_crime':highest_crime_rate['date']})
 
 Output:
 
