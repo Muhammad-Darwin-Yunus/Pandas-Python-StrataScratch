@@ -24,7 +24,9 @@ import pandas as pd
 
 # Start writing code
 
-listening_data = listening_habits.groupby('user_id').agg(total_listen_duration=('listen_duration',lambda x: round(x.sum()/60)),unique_song_count=('song_id','nunique')).reset_index()
+aggregate_listening_data = pd.DataFrame(listening_habits)
+
+listening_data = aggregate_listening_data.groupby('user_id').agg(total_listen_duration=('listen_duration',lambda x: round(x.sum()/60)),unique_song_count=('song_id','nunique')).reset_index()
 
 listening_data
 
