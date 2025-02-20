@@ -30,9 +30,9 @@ import pandas as pd
 
 lolo_chicken = pd.DataFrame(yelp_reviews)
 
-lolo_chicken = lolo_chicken[lolo_chicken['business_name']=="Lo-Lo's Chicken & Waffles"]
+lolo_chicken_star = lolo_chicken[lolo_chicken['business_name']=="Lo-Lo's Chicken & Waffles"]
 
-lolo_chicken = lolo_chicken.groupby('business_name').agg(stars=('stars','sum'),total_review_id=('review_id','count')).reset_index()
+lolo_chicken_fix = lolo_chicken_star.groupby('business_name').agg(stars=('stars','sum'),total_review_id=('review_id','count')).reset_index()
 
 Output:
 
