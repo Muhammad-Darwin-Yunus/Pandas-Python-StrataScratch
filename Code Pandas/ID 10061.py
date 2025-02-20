@@ -35,7 +35,7 @@ import pandas as pd
 
 popularity_hack = pd.merge(facebook_employees,facebook_hack_survey,left_on='id',right_on='employee_id',how='inner')
 
-popularity_hack = popularity_hack.groupby('location')['popularity'].mean().reset_index()
+popularity_hack_of = popularity_hack.groupby('location')['popularity'].mean().reset_index()
 
 Output:
 
