@@ -25,11 +25,11 @@ import pandas as pd
 
 hired_june = pd.DataFrame(worker)
 
-hired_june = hired_june[(hired_june['joining_date'].dt.month==6) & (hired_june['worker_id']% 2 == 0)]
+hired_june_id = hired_june[(hired_june['joining_date'].dt.month==6) & (hired_june['worker_id']% 2 == 0)]
 
-hired_june['fullname'] = hired_june['first_name'] + ' ' + hired_june['last_name']
+hired_june_id['fullname'] = hired_june_id['first_name'] + ' ' + hired_june_id['last_name']
 
-hired_june['fullname']
+hired_june_id['fullname']
 
 Output:
 
