@@ -26,11 +26,11 @@ import pandas as pd
 
 housing_units = pd.DataFrame(housing_units_completed_us)
 
-housing_units = housing_units.groupby('year')[['south','west','midwest','northeast']].sum()
+housing_units_total = housing_units.groupby('year')[['south','west','midwest','northeast']].sum()
 
-housing_units['total_housings'] = housing_units.sum(axis=1)
+housing_units_total['total_housings'] = housing_units_total.sum(axis=1)
 
-housing_units = housing_units[['total_housings']].reset_index()
+housing_units_fix = housing_units_total[['total_housings']].reset_index()
 
 Output:
 
