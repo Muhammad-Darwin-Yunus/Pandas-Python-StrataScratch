@@ -26,9 +26,9 @@ import pandas as pd
 
 number_variety = pd.DataFrame(iris)
 
-number_variety = number_variety.groupby('variety')['sepal_length'].count().reset_index()
+number_variety_record = number_variety.groupby('variety')['sepal_length'].count().reset_index()
 
-number_variety = number_variety.rename(columns={'sepal_length':'total_variety'})
+number_variety_rename = number_variety_record.rename(columns={'sepal_length':'total_variety'})
 
 Output:
 
