@@ -29,6 +29,8 @@ playbook_users = pd.DataFrame(playbook_users)
 playbook_users_language = playbook_users.groupby('language')['user_id'].count().reset_index(name='number_of_speakers')
 
 playbook_users_sort = playbook_users_language.sort_values('number_of_speakers',ascending=False)
+
+playbook_users_sort[['number_of_speakers','language']]
     
 Output:
 
